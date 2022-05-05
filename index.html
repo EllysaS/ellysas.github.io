@@ -13,22 +13,35 @@
             <div class="consoles">
                 <h2>What console(s) do you have?</h2>
                 <form id="c-form">
-                    <input type="checkbox" name="pc" value="pc" class="c-field">
+                    <input type="checkbox" name="pc" value="pc" class="c-field"/>
                     <label for="pc">PC</label>
                     <br/>
-                    <input type="checkbox" name="xbox" value="xbox" class="c-field">
+                    <input type="checkbox" name="xbox" value="xbox" class="c-field"/>
                     <label for="xbox">Xbox</label>
                     <br/>
-                    <input type="checkbox" name="playstation" value="playstation" class="c-field">
+                    <input type="checkbox" name="playstation" value="playstation" class="c-field"/>
                     <label for="playstation">Playstation</label>
                     <br/>
-                    <input type="checkbox" name="switch" value="switch" class="c-field">
+                    <input type="checkbox" name="switch" value="switch" class="c-field"/>
                     <label for="switch">Nintendo Switch</label>
                     <br/>
-                    <input type="text" name="other" placeholder="other" class="c-field">
+                    <input type="checkbox" name="other" value="other" class="c-field"/>
                     <label for="other">Other</label>
+                    <input type="text" name="other" class="c-field"/>
                     <br/>
-                    <input type="submit" value="Submit">
+                    <input type="submit" value="Submit" class="f-submit c-field"/>
+                </form>
+            </div>
+            <div class="secrets">
+                <h2>Tell me secrets:</h2>
+                <form id="s-form">
+                    <label for="fear">What's your biggest fear?</label>
+                    <input data-heap-redact-text="true" type="text" name="fear" class="s-field"/>
+                    <br/>
+                    <label for="dream">What's your wildest dream?</label>
+                    <input data-heap-redact-text="true" type="text" name="dream" class="s-field"/>
+                    <br/>
+                    <input type="submit" value="Submit" class="f-submit s-field"/>
                 </form>
             </div>
         </div>
