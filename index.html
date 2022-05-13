@@ -14,33 +14,41 @@
         <h1>Cult.jpg</h1>
         <div class="main">
             <div class="familiars">
-                <h2>Choose a familiar:</h2>
-                <form id="f-form">
-                    <input type="radio" name="rat" value="rat" class="f-field"/>
-                    <label for="rat">Rat</label>
-                    <input type="radio" name="bat" value="bat" class="f-field"/>
-                    <label for="bat">Bat</label>
-                    <input type="radio" name="cat" value="cat" class="f-field"/>
-                    <label for="cat">Cat</label>
-                    <input type="radio" name="other" value="other" class="f-field"/>
-                    <label for="other">Other</label>
-                    <input type="text" name="other" class="f-field"/>
-                    <input type="submit" value="Submit" class="f-submit f-field"/>
-                </form>
+                <h2 class="header">Choose a familiar:</h2>
+                <input type="radio" name="familiar" value="rat" class="f-field"/>
+                <label for="rat">Rat</label>
+                <br/>
+                <input type="radio" name="familiar" value="bat" class="f-field"/>
+                <label for="bat">Bat</label>
+                <br/>
+                <input type="radio" name="familiar" value="cat" class="f-field"/>
+                <label for="cat">Cat</label>
+                <br/>
+                <input type="radio" name="familiar" value="other" class="f-field"/>
+                <label for="other">Other</label>
+                <input type="text" name="familiar" class="f-field"/>
+                <br/>
+                <br/>
+                <button id="f-button f-field">Submit</button>
             </div>
             <div class="secrets">
-                <h2>Tell me secrets:</h2>
+                <h2 class="header">Tell me secrets:</h2>
                 <form id="s-form">
                     <label for="fear">What's your biggest fear?</label>
                     <input type="text" name="fear" class="s-field"/>
+                    <br/>
                     <label for="dream">What's your wildest dream?</label>
                     <input type="text" name="dream" class="s-field"/>
+                    <br/>
+                    <br/>
                     <input type="submit" value="Trust Me" class="f-submit s-field"/>
                 </form>
             </div>
             <!-- Heap Redact Attributes on Div -->
             <div class="private" data-heap-redact-attributes="attr1,attr2">
-                <h3 class="p-para" attr1="confidential" attr2="confidential-again" attr3="safe">(Don't) Click the Button</h3>
+                <h3 class="p-para" attr1="confidential" attr2="confidential-again" attr3="safe">
+                    (Don't) Click the Button
+                </h3>
                 <!-- Heap Redact Text on Button -->
                 <button id="p-button" data-heap-redact-text="true" onclick="alert('YOUR ASSIGNED FBI AGENT HAS BEEN INFORMED OF YOUR RESPONSES')">Shablam!</button>
             </div>
