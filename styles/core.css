@@ -1,0 +1,17 @@
+body, input, button, select {
+    font-family: "Andale Mono", monospace;
+    background-color: #000000;
+    color: #e5e5e5;
+}
+
+h1, h2, h3 {
+    color: #00ffff;
+}
+
+a, button, input[type="submit"] {
+    color: #8000ff;
+}
+
+button, input[type="submit"] {
+    background-color: #e5e5e5;
+}

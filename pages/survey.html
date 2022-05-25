@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Cult.jpg - Survey</title>
+        <link rel="stylesheet" href="../styles/core.css"/>
+        <!-- Heap Installation Snippet -->
+        <script type="text/javascript">
+            window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=document.createElement("script");r.type="text/javascript",r.async=!0,r.src="https://cdn.heapanalytics.com/js/heap-"+e+".js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(r,a);for(var n=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","resetIdentity","removeEventProperty","setEventProperties","track","unsetEventProperty"],o=0;o<p.length;o++)heap[p[o]]=n(p[o])};
+            heap.load("4231796230");
+        </script>
+    </head>
+    <body>
+        <h1>Cult.jpg Convert Survey</h1>
+        <div class="zodiacs">
+            <h2><label for="zodiac">What's your sign?</label></h2>
+            <select name="zodiac" id="z-select">
+                <option name="aquarius">Aquarius</option>
+                <option name="pisces">Pisces</option>
+                <option name="aries">Aries</option>
+                <option name="taurus">Taurus</option>
+                <option name="gemini">Gemini</option>
+                <option name="cancer">Cancer</option>
+                <option name="leo">Leo</option>
+                <option name="virgo">Virgo</option>
+                <option name="libra">Libra</option>
+                <option name="scorpio">Scorpio</option>
+                <option name="sagittarius">Sagittarius</option>
+                <option name="capricorn">Capricorn</option>
+            </select>
+        </div>
+        <div class="familiars">
+            <h2 class="header">Choose a familiar:</h2>
+            <input type="radio" name="familiar" value="rat" class="f-field"/>
+            <label for="rat">Rat</label>
+            <br/>
+            <input type="radio" name="familiar" value="bat" class="f-field"/>
+            <label for="bat">Bat</label>
+            <br/>
+            <input type="radio" name="familiar" value="cat" class="f-field"/>
+            <label for="cat">Cat</label>
+            <br/>
+            <input type="radio" name="familiar" value="other" class="f-field"/>
+            <label for="other">Other</label>
+            <input type="text" name="familiar" class="f-field"/>
+            <br/>
+            <br/>
+            <button id="f-button" class="f-field">Submit</button>
+        </div>
+        <div class="secrets">
+            <h2 class="header">Tell me secrets:</h2>
+            <form id="s-form">
+                <label for="fear">What's your biggest fear?</label>
+                <input type="text" name="fear" class="s-field"/>
+                <br/>
+                <label for="dream">What's your wildest dream?</label>
+                <input type="text" name="dream" class="s-field"/>
+                <br/>
+                <br/>
+                <input type="submit" value="Trust Me" class="f-submit s-field"/>
+            </form>
+        </div>
+        <!-- Heap Redact Attributes on Div -->
+        <div class="redacts" data-heap-redact-attributes="attr1,attr2">
+            <h3 class="p-para" attr1="confidential" attr2="confidential-again" attr3="safe">
+                (Don't) Click the Button
+            </h3>
+            <!-- Heap Redact Text on Button -->
+            <button id="p-button" data-heap-redact-text="true" onclick="alert('YOUR ASSIGNED FBI AGENT HAS BEEN INFORMED OF YOUR RESPONSES')">Shablam!</button>
+        </div>
+    </body>
+</html>
