@@ -9,7 +9,7 @@
             window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=document.createElement("script");r.type="text/javascript",r.async=!0,r.src="https://cdn.heapanalytics.com/js/heap-"+e+".js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(r,a);for(var n=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","resetIdentity","removeEventProperty","setEventProperties","track","unsetEventProperty"],o=0;o<p.length;o++)heap[p[o]]=n(p[o])};
             heap.load("4231796230");
         </script>
-        <!-- Hotjar Tracking Code for Site 5138653 (name missing) -->
+        <!-- Hotjar Tracking Code for Site 5138653 (EllysaStanton) -->
         <script>
             (function(h,o,t,j,a,r){
                 h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
@@ -79,5 +79,21 @@
             <!-- Heap Redact Text on Button -->
             <button id="p-button" data-heap-redact-text="true" onclick="alert('YOUR ASSIGNED FBI AGENT HAS BEEN INFORMED OF YOUR RESPONSES')">Shablam!</button>
         </div>
+        <!-- Contentsquare Main Tracking Tag -->
+        <script type="text/javascript">
+            (function () {
+                window._uxa = window._uxa || [];
+                if (typeof CS_CONF === 'undefined') {
+                window._uxa.push(['setPath', window.location.pathname + window.location.hash.replace('#', '?__')]);
+                var mt = document.createElement("script");
+                mt.type = "text/javascript";
+                mt.async = true;
+                mt.src = "//t.contentsquare.net/uxa/2c5142b15f133.js";
+                document.getElementsByTagName("head")[0].appendChild(mt);
+                } else {
+                window._uxa.push(['trackPageview', window.location.pathname + window.location.hash.replace('#', '?__')]);
+                }
+            })();
+        </script>        
     </body>
 </html>
